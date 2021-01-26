@@ -69,7 +69,26 @@ class MainActivity : AppCompatActivity() {
         var itemNumber: String = ""
 
         selectItem.setOnClickListener {
-            var itemNumberArray = arrayOf("1", "2", "3", "4", "5", "6", "7")
+            var itemNumberArray = arrayOf("1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20", "21", "22")
             AlertDialog.Builder(this)
                 .setTitle("아이템 번호를 선택해주세요")
                 .setItems(itemNumberArray) { dialog, which ->
@@ -103,6 +122,17 @@ class MainActivity : AppCompatActivity() {
 
         btnItemInsert.setOnClickListener {
             val intent: Intent = Intent(this, ItemInsertActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        btnMemberJoin.setOnClickListener{
+            val intent: Intent = Intent(this, MemberJoinActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnLogin.setOnClickListener{
+            val intent: Intent = Intent(this, MemberLoginActivity::class.java)
             startActivity(intent)
         }
 

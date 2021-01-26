@@ -76,5 +76,17 @@
         android:text="ITEM 추가(JSONParsing-File Upload)"
         android:id="@+id/btnItemInsert" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:id="@+id/btnMemberJoin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:id="@+id/btnLogin" />
+
 
 </LinearLayout>
